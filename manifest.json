@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "URL Grabber Extension",
+    "version": "1.2",
+    "description": "Grabs and displays the current URL on a small pop-up window.",
+    "permissions": ["activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [{
+      "matches": ["<all_urls>"],
+      "js": ["content_script.js"]
+    }]
+  }
+  
